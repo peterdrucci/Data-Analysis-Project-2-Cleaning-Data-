@@ -50,8 +50,6 @@ WHERE a.PropertyAddress IS NULL
 SELECT *
 FROM PorfolioProject..NashvilleHousing
 
-
-
 SELECT 
 SUBSTRING(PropertyAddress, 1, CHARINDEX(',', PropertyAddress) -1) AS Address,
 SUBSTRING (PropertyAddress, CHARINDEX(',', PropertyAddress) +1, LEN(PropertyAddress)) AS City
